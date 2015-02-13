@@ -21,6 +21,7 @@ unzip(tf, files=fname, exdir=td, overwrite=TRUE)
 # fpath is the full path to the extracted file
 fpath = file.path(td, fname)
 #using read.table function to read all the files 
+#use fpath to enlist all the files and choose which ones to read.
 activity.labels<- read.table(fpath[1])
 features <- read.table(fpath[2])
 ## the second column of features contains the desired variable names ie measurement of all 561 features for test and train data
